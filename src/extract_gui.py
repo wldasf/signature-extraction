@@ -100,7 +100,7 @@ class SignatureExtractor:
         tk.Grid.columnconfigure(mainframe, 0, weight=1)
 
         # Create a Tkinter variable
-        self.model = joblib.load("models/decision-tree.pkl")
+        self.model = joblib.load("../models/decision-tree.pkl")
 
         tk.Button(mainframe, text="Open an Image", command=open_image).grid(row=0, column=0, sticky=tk.E)
         tk.Button(mainframe, text="Detect Signature", command=detect_signature).grid(row=0, column=1, sticky=tk.E)
